@@ -1,9 +1,9 @@
-✨ KLEA Skincare – Pure Care, Pure Confidence!
+## ✨ KLEA Skincare – Pure Care, Pure Confidence!
 
 Welcome to KLEA Skincare, a clean, aesthetic, and fully responsive skincare brand landing page project. This front-end project is designed to showcase skincare products with interactive galleries, smooth product hover effects, and a stylish customer feedback section.
 
 
-🎨 How it Looks
+## 🎨 How it Looks
 
 🌸 Clean, modern and minimalistic design
 
@@ -21,7 +21,7 @@ Welcome to KLEA Skincare, a clean, aesthetic, and fully responsive skincare bran
 
 
 
-🛠️ Features
+## 🛠️ Features
 
 🔘 Separate About, Contact, and Product pages
 
@@ -37,28 +37,22 @@ Welcome to KLEA Skincare, a clean, aesthetic, and fully responsive skincare bran
 
 
 
-▶️ How to Run
+## ▶️ How to Run
 
 📥 Download or clone this repository
 
-Open Landing_pg.html file in your browser
+Open the Landing_pg.html file in your browser
 
 Explore all sections and interactive product displays
 
 
 
-📁 Files
-
-txt
-
-Copy
-
-Edit
+## 📁 Files
 
 
 klea-skincare/
 
-├── about/         # About page files
+├── about/               # About page files
 
 ├── contact/             # Contact page files
 
@@ -69,14 +63,14 @@ klea-skincare/
 └── Landing_pg.html      # Main landing page
 
 
-🎀 Note:
+## 🎀 Note:
 
 💻 Built using HTML, CSS, and Bootstrap
 
 📡 Purely front-end — no back-end system
 
-📱 Fully mobile responsive
 
 
 
 🌟 Made for creativity and clean design lovers 💖
+             by Soha & Maryam
