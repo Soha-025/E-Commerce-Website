@@ -1,0 +1,443 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+/* Custom Styles for Klea Navbar */
+
+/* Announcement Bar */
+.announcement-bar {
+  background-color: #7C9A78; /* Dark purple/gray similar to the image */
+  color: white;
+}
+
+.announcement-bar a {
+  letter-spacing: 0.05em; /* Slightly increased letter spacing */
+}
+
+/* Brand Name - KLEA */
+.navbar-brand-klea {
+  font-family: 'Georgia', serif; /* Or choose a font that gives an "enhanced" feel */
+  font-size: 2.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  color: #363042; /* A dark color for the brand name */
+  text-decoration: none; /* Remove underline for links */
+  letter-spacing: 0.1em; /* Increased letter spacing for the brand name */
+  text-transform: uppercase; /* Ensure it's uppercase like the example */
+}
+
+/* Navbar general styling */
+.navbar {
+  border-bottom: 1px solid #eee; /* A subtle bottom border like the example */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Nav links */
+.navbar-nav .nav-link {
+  color: #333; /* Darker text for main nav links */
+  font-weight: 500; /* Slightly bolder */
+  padding: 0.5rem 1rem; /* Adjust padding */
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #666; /* Lighter on hover */
+}
+
+/* Active link (optional, depends on how you want to highlight the current page) */
+.navbar-nav .nav-link.active {
+  color: #007bff; /* Example active color */
+  font-weight: bold;
+}
+
+/* Icons */
+.navbar-left .nav-link,
+.navbar-right .nav-link {
+  color: #333; /* Color for icons */
+  transition: color 0.3s ease;
+}
+
+.navbar-left .nav-link:hover,
+.navbar-right .nav-link:hover {
+  color: #666;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu {
+  border: none;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item {
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #000;
+}
+/* Custom Styles for Klea Navbar (Keep your existing navbar styles here) */
+
+/* ... (Your existing Navbar, Announcement Bar, Brand Name, Nav Links, Icons, Dropdown Menu styles) ... */
+
+/* Empty Cart Overlay (This is now the sliding panel itself) */
+#empty-cart-overlay {
+  position: fixed; /* Keep it fixed to overlay content */
+  top: 0;
+  right: -450px; /* Initially off-screen to the right by its max-width */
+  height: 100vh; /* Take full viewport height */
+  width: 100%; /* Take full width on small screens */
+  max-width: 450px; /* Max width for the panel on larger screens */
+  background-color: #f8f8f8; /* The light background of the panel */
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 1000; /* Ensure it's on top of other content */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+  padding: 30px 20px; /* Internal padding for content */
+  box-sizing: border-box; /* Include padding in width calculation */
+
+  /* Flexbox for centering content vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text inside the panel */
+
+  transition: right 0.3s ease-out; /* Smooth slide-in/out transition */
+}
+
+/* Class to show the panel */
+#empty-cart-overlay.is-open {
+  right: 0; /* Slide into view */
+}
+
+/* Close button positioning within the panel */
+.close-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  z-index: 1001; /* Ensure close button is above other content in the panel */
+}
+
+.close-button:hover {
+  color: #000;
+}
+
+/* Text and button styling within the panel */
+#empty-cart-overlay h2 { /* Targeting h2 inside the overlay */
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #333;
+  font-weight: 600;
+}
+
+#empty-cart-overlay p { /* Targeting p inside the overlay */
+  color: #777;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+.continue-shopping-button {
+  background-color: #B4C89F;
+  color: #333;
+  border: none;
+  padding: 12px 35px;
+  border-radius: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+
+.have-account {
+  margin-top: 40px;
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.have-account a {
+  color: #007bff;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.have-account a:hover {
+  color: #0056b3;
+}
+
+/* Media query for very small screens (optional, but good for responsiveness) */
+@media (max-width: 576px) {
+  #empty-cart-overlay h2 {
+      font-size: 1.8rem;
+  }
+  #empty-cart-overlay p, .have-account {
+      font-size: 1rem;
+  }
+  .continue-shopping-button {
+      padding: 10px 25px;
+  }
+  .close-button {
+      top: 15px;
+      right: 15px;
+      font-size: 1.8rem;
+  }
+}
+
+
+
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+
+.custom-btn{
+  border-radius: 30px;
+  background-color:  #B4C89F
+  
+}
+
+/* Hover effect */
+.custom-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.toggle-link {
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 1rem;
+  text-align: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+/* --- Explore Page Specific Styles (Now applies to About page) --- */
+
+.explore-hero { /* This class name can stay as is, or you can rename to .about-hero if preferred */
+  /* Replace with your desired background image */
+  /* Example: background-image: url('path/to/your/cleanser_products.jpg'); */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px; /* Adjust height as needed */
+  position: relative; /* For positioning the content box */
+  color: #333; /* Default text color for hero section */
+  display: flex; /* Ensure flexbox for centering */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  padding: 20px; /* Responsive padding */
+}
+
+.explore-content { /* This class name can stay as is, or you can rename to .about-content if preferred */
+  background-color: rgba(165, 203, 165, 0.9); /* Light green background with transparency */
+  border-radius: 10px; /* Rounded corners */
+  padding: 3rem 4rem; /* Generous padding */
+  max-width: 900px; /* Max width for the text box */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+  text-align: center;
+  backdrop-filter: blur(5px); /* Optional: Adds a blur effect to content behind it */
+  -webkit-backdrop-filter: blur(5px); /* For Safari support */
+}
+
+.explore-content h1 {
+  font-size: 3rem; /* Larger heading */
+  font-weight: bold;
+  color: #516854; /* Darker green for heading */
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.explore-content p {
+  font-size: 1.2rem; /* Comfortable reading size */
+  color: #4a4a4a; /* Slightly darker grey for body text */
+  line-height: 1.6;
+}
+
+/* --- Our Promise Section --- */
+.our-promise {
+  background-color: #ffffff; /* White background */
+  padding: 80px 0; /* Vertical padding */
+}
+
+.our-promise h2 {
+  color: #333; /* Dark color for heading */
+  margin-bottom: 20px;
+}
+
+.our-promise p {
+  font-size: 1.1rem;
+  color: #666;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ex-img {
+  /* Use Bootstrap's d-flex, justify-content-center, align-items-center in HTML
+     if you want to center the image. Otherwise, rely on img-fluid */
+  padding: 30px; /* Add some padding around the image within its column */
+}
+
+.ex-img img {
+  /* img-fluid class already handles max-width: 100% and height: auto */
+  border-radius: 10px !important; /* Slightly rounded corners for the image */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Text content column styling */
+.col-sm-4.para {
+  background-color: #516854;
+  padding: 30px; /* Add internal padding for the text */
+  border-radius: 8px; /* Rounded corners for the text box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Lighter shadow for text box */
+}
+
+.col-sm-4.para p {
+  font-size: 1.1rem; /* Readable font size */
+  line-height: 1.6; /* Good line height for readability */
+  color: #f2f2f2; /* Darker grey for body text */
+  text-align: left; /* Align text to the left */
+}
+/* ===== Complete Footer Styling ===== */
+footer.container-fluid.custom-footer {
+  background-color: solid #eee;
+  border-top: 1px solid #f0e6e6;
+  padding: 3rem 0 1.5rem;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  color: #5a5a5a;
+}
+
+footer.container-fluid.custom-footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer.container-fluid.custom-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+footer.container-fluid.custom-footer [class^="col-"] {
+  padding: 0 15px;
+  margin-bottom: 1.5rem;
+}
+
+footer.container-fluid.custom-footer h5 {
+  color: #3a3a3a;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+footer.container-fluid.custom-footer p {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+footer.container-fluid.custom-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer.container-fluid.custom-footer ul li {
+  margin-bottom: 0.7rem;
+}
+
+footer.container-fluid.custom-footer a {
+  color: #5a5a5a;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+
+
+footer.container-fluid.custom-footer .social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+
+
+footer.container-fluid.custom-footer .input-group {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+footer.container-fluid.custom-footer .form-control {
+  border: 1px solid #e0d6d6;
+  border-radius: 0;
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  flex: 1;
+}
+
+footer.container-fluid.custom-footer .btn {
+  background-color: #d4a6b1;
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+footer.container-fluid.custom-footer .btn:hover {
+  background-color: #c28d99;
+}
+
+footer.container-fluid.custom-footer .small {
+  font-size: 0.75rem;
+  color: #999;
+  margin-top: 0.5rem;
+}
+
+footer.container-fluid.custom-footer .copyright-section {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #f0e6e6;
+}
+
+footer.container-fluid.custom-footer .payment-methods {
+  margin-top: 0.5rem;
+}
+
+footer.container-fluid.custom-footer .payment-methods i {
+  font-size: 1.5rem;
+  color: #999;
+  margin: 0 0.5rem;
+  transition: all 0.3s ease;
+}
+
+footer.container-fluid.custom-footer .payment-methods i:hover {
+  color: #5a5a5a;
+}
+
