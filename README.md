@@ -20,6 +20,7 @@ Welcome to KLEA Skincare, a clean, aesthetic, and fully responsive skincare bran
 🔗 Footer with social media icons & contact details
 
 
+
 🛠️ Features
 
 🔘 Separate About, Contact, and Product pages
@@ -35,6 +36,7 @@ Welcome to KLEA Skincare, a clean, aesthetic, and fully responsive skincare bran
 🌐 Clean footer with social icons (Facebook, Insta, WhatsApp)
 
 
+
 ▶️ How to Run
 
 📥 Download or clone this repository
@@ -44,6 +46,7 @@ Open Landing_pg.html file in your browser
 Explore all sections and interactive product displays
 
 
+
 📁 Files
 
 txt
@@ -51,6 +54,7 @@ txt
 Copy
 
 Edit
+
 
 klea-skincare/
 
@@ -64,6 +68,7 @@ klea-skincare/
 
 └── Landing_pg.html      # Main landing page
 
+
 🎀 Note:
 
 💻 Built using HTML, CSS, and Bootstrap
@@ -71,6 +76,7 @@ klea-skincare/
 📡 Purely front-end — no back-end system
 
 📱 Fully mobile responsive
+
 
 
 🌟 Made for creativity and clean design lovers 💖
