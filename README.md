@@ -21,7 +21,7 @@ Welcome to KLEA Skincare, a clean, aesthetic, and fully responsive skincare bran
 
 
 
-## 🛠️ Features
+##  ⚙️ Features
 
 🔘 Separate About, Contact, and Product pages
 
