@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KLEA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      background-image: url('https://static.vecteezy.com/system/resources/thumbnails/057/729/054/small_2x/woman-applying-serum-to-her-skin-in-a-beauty-routine-photo.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: rgb(40, 44, 40);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 50px;
+      text-shadow: 0 0 5px #646262;
+    }
+    .btn-custom {
+      background-color: #ffffff;
+      color: #000000;
+      border-radius: 30px;
+      padding: 10px 25px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .announcement-bar {
+      background-color: #6b957a;
+      color: white; /* Changed to white for better visibility of text */
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      transition: opacity 0.5s ease-in-out; /* Added transition for smooth fade */
+    }
+    .announcement-bar a {
+      color: white; /* Ensure the link text is white */
+      text-decoration: none; /* Remove underline */
+    }
+    .navbar {
+      background-color: #fdf6f0; /* soft pastel skin color */
+    }
+    .navbar-brand-klea {
+      font-size: 28px;
+      font-weight: 700;
+      color: #000;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+    .navbar-brand-klea:hover {
+      color: #333;
+    }
+    .navbar-nav .nav-link {
+      font-size: 15px;
+      font-weight: 600;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+    .navbar-nav .nav-link:hover, 
+    .navbar-nav .nav-link:focus {
+      color: #6b957a;
+    }
+    .dropdown-menu {
+      background-color: #fff;
+      border-radius: 8px;
+      border: none;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin-top: 10px;
+    }
+    .dropdown-item {
+      font-size: 14px;
+      padding: 10px 20px;
+      color: #333;
+      transition: all 0.3s ease;
+    }
+    .dropdown-item:hover {
+      background-color: #fdf6f0;
+      color: #000;
+    }
+    .navbar svg {
+      transition: color 0.3s ease;
+    }
+    .navbar svg:hover {
+      color: #000;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      color: #333;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover {
+      color: #6b957a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="announcement-bar d-flex justify-content-center align-items-center py-2">
+    <a href="#" class="text-white text-decoration-none" id="announcement-message">USE WELCOME10 FOR 10% OFF FIRST ORDER</a>
+  </div>
+
+  <nav class="navbar navbar-expand-lg shadow-sm">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="navbar-left">
+      </div>
+
+      <a class="navbar-brand-klea mx-auto" href="#">KLEA</a>
+
+      <div class="navbar-right d-flex align-items-center">
+        <a class="nav-link me-3" href="contact/contact.html"> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+        </a>
+        <a class="nav-link" href="#" id="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-dark pt-0" style="background-color: #cfdbcf;">
+    <div class="container d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="Landing_pg.html">Home</a>
+        </li>
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownShop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownShop">
+            <li><a class="dropdown-item" href="product/cleanser.html">Cleanser</a></li>
+            <li><a class="dropdown-item" href="product/moisturizer.html">Moisturizer</a></li>
+            <li><a class="dropdown-item" href="product/lip_balm.html">Lip Care</a></li>
+            <li><a class="dropdown-item" href="product/serum.html">Serum</a></li>
+            <li><a class="dropdown-item" href="product/mask.html">Mask</a></li>
+            <li><a class="dropdown-item" href="product/toner.html">Toner</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="product/our_product.html">All Products</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link" href="about.html">Explore</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9f8f7;
+    }
+
+    .navbar {
+      background-color: #fcfcfc;
+    }
+
+    .cart-sidebar {
+      position: fixed;
+      top: 0;
+      right: -50%;
+      width: 35%;
+      height: 100%;
+      background: #fbfef1;
+      box-shadow: -4px 0 12px rgba(0,0,0,0.2);
+      padding: 20px;
+      z-index: 9999;
+      transition: 0.4s ease;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .cart-sidebar.active {
+      right: 0;
+    }
+
+    .cart-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #4B3832;
+      border-bottom: 1px solid #5c6254;
+      padding-bottom: 15px;
+    }
+
+    .cart-header h4 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    .close-cart {
+      background: none;
+      border: none;
+      font-size: 28px;
+      color: #4B3832;
+      cursor: pointer;
+    }
+
+    .cart-body {
+      flex: 1;
+      overflow-y: auto;
+      margin-top: 20px;
+    }
+
+    /* Style for individual cart item (added for remove button alignment) */
+    .cart-item {
+      padding: 12px 0;
+      border-bottom: 1px solid #b5bbac;
+      color: #265d43;
+      font-size: 16px;
+      display: flex; /* Added flex for alignment */
+      align-items: center; /* Added flex for alignment */
+      justify-content: space-between; /* Space out content and button */
+    }
+
+    /* Style for the remove button */
+    .remove-item-btn {
+      background: none;
+      border: none;
+      font-size: 20px;
+      color: #dc3545; /* Red color for the cross */
+      cursor: pointer;
+      margin-left: 10px;
+      padding: 0; /* Remove default padding */
+      line-height: 1; /* Adjust line height for better centering */
+    }
+    .remove-item-btn:hover {
+        color: #c82333; /* Darker red on hover */
+    }
+
+
+    .cart-footer {
+      border-top: 1px solid #b5bbac;
+      padding-top: 15px;
+      text-align: right;
+      color: #4B3832;
+      font-size: 17px;
+    }
+
+    .checkout-btn {
+      display: inline-block;
+      background: #C2A386;
+      color: #fff;
+      padding: 10px 25px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin-top: 10px;
+    }
+
+    .checkout-btn:hover {
+      background: #B39172;
+    }
+
+    .add-to-cart-btn {
+      margin: 10px;
+      padding: 10px 25px;
+      background: #C2A386;
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      font-size: 14px;
+    }
+
+    .add-to-cart-btn:hover {
+      background: #4c5c50;
+    }
+  </style>
+</head>
+<body>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <div class="cart-header">
+    <h4>Your Cart</h4>
+    <button class="close-cart">&times;</button>
+  </div>
+  <div class="cart-body" id="cart-items"></div>
+  <div class="cart-footer">
+    <div>Total: <span id="cart-total">PKR 0</span></div>
+    <a href="#" class="checkout-btn" id="checkout-btn">Checkout</a>
+  </div>
+</div>
+
+<script>
+  let cart = [];
+
+  // This function is still present from previous versions, but the main cart logic
+  // in the DOMContentLoaded listener below is now handling the update.
+  // It's good practice to consolidate or remove redundant functions.
+  function addToCart(product, price) {
+    cart.push({ product, price });
+    updateCartUI();
+  }
+
+  // This function is still present from previous versions, but the main cart logic
+  // in the DOMContentLoaded listener below is now handling the update.
+  function updateCartUI() {
+    const cartItems = document.getElementById('cart-items');
+    cartItems.innerHTML = '';
+    let total = 0;
+
+    cart.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'cart-item';
+      div.innerHTML = `${item.product} - PKR ${item.price}`;
+      cartItems.appendChild(div);
+      total += item.price;
+    });
+
+    document.getElementById('cart-total').innerText = `PKR ${total}`;
+  }
+
+  document.getElementById('cart-icon').addEventListener('click', () => {
+    document.getElementById('cart-sidebar').classList.add('active');
+  });
+
+  document.querySelector('.close-cart').addEventListener('click', () => {
+    document.getElementById('cart-sidebar').classList.remove('active');
+  });
+</script>
+    
+<div class="hero">
+  <h5>SKINCARE BEAUTY</h5>
+  <h1 class="display-4">#1 RATED</h1>
+  <h1 class="display-4">SKINCARE & BEAUTY GLOW</h1>
+  <p class="lead">Discover luxury skincare crafted with love. Your skin deserves this glow.</p>
+  <div class="mt-4">
+    <a href="product/our_product.html" class="btn btn-outline-dark">SHOP NOW</a>
+  </div>
+</div>
+
+<style>
+  body { overflow-x:hidden; }
+
+  .product-card {
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  .product-card:hover {
+    transform: scale(1.05);
+  }
+  .product-img {
+    height: 250px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+  .feedback-marquee {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: moveleft 20s linear infinite;
+  }
+  @keyframes moveleft {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
+  .footer {
+    background-color: #222;
+    color: #ccc;
+    padding: 30px 0;
+    text-align: center;
+  }
+  .footer a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 22px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container py-5">
+  <h2 class="text-center mb-4" style="color: #5d6c5a;">Discount Offers</h2>
+  <div class="row g-4">
+      <div class="col-md-4">
+      <div class="card text-center p-3 product-card">
+    <img src="https://www.shutterstock.com/image-photo/blank-amber-glass-essential-oil-600nw-2019263801.jpg" 
+      class="product-img mb-3" 
+      alt="Nourishing facial serum for radiant complexion"
+      onmouseover="this.src='https://i.pinimg.com/736x/ed/2d/f1/ed2df1b90eb074761e4013e89c3a5b83.jpg';"
+      onmouseout="this.src='https://www.shutterstock.com/image-photo/blank-amber-glass-essential-oil-600nw-2019263801.jpg';">
+    <h5 style="font-size: 20px; font-weight: 600; color: #434f40; margin-top: 10px;">Glow Serum</h5>
+    <p style="font-size: 16px; color: #7a7a6f;">PKR 1,800</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-light add-to-cart-btn" >Add to Cart</button>
+      <button class="btn buy-now-btn" style="background-color: #5d6c5a; color: #fff; border-radius: 8px; padding: 6px 16px;">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+    <div class="col-md-4">
+      <div class="card text-center p-3 product-card">
+    <img src="https://www.shutterstock.com/image-photo/jars-cosmetic-cream-pampas-grass-600nw-2441879095.jpg" 
+      class="product-img mb-3" 
+      alt="Moisturizing Hydra Cream for soft, supple skin"
+      onmouseover="this.src='https://globalspaonline.com/uploads/2022/10/K-Beauty-vs-I-Beauty-Whats-the-Difference-Cover-Image.jpg';"
+      onmouseout="this.src='https://www.shutterstock.com/image-photo/jars-cosmetic-cream-pampas-grass-600nw-2441879095.jpg';">
+    <h5 style="font-size: 20px; font-weight: 600; color: #434f40; margin-top: 10px;">Hydra Cream</h5>
+    <p style="font-size: 16px; color: #7a7a6f;">PKR 2,500</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-light add-to-cart-btn" >Add to Cart</button>
+      <button class="btn buy-now-btn" style="background-color: #5d6c5a; color: #fff; border-radius: 8px; padding: 6px 16px;">Buy Now</button>
+    </div>
+  </div>
+</div>
+       <div class="col-md-4">
+  <div class="card text-center p-3 product-card">
+    <img src="https://t3.ftcdn.net/jpg/14/55/34/98/360_F_1455349818_89fBsq1kvmRK6sHgQ4BePKjMJ25FCSaL.jpg" 
+      class="product-img mb-3" 
+      alt="Glow Boost"
+      onmouseover="this.src='https://english.cdn.zeenews.com/sites/default/files/2025/01/20/1638635-untitled-design-3.png?im=Resize=(1200,900)';"
+      onmouseout="this.src='https://t3.ftcdn.net/jpg/14/55/34/98/360_F_1455349818_89fBsq1kvmRK6sHgQ4BePKjMJ25FCSaL.jpg';">
+    <h5 style="font-size: 20px; font-weight: 600; color: #434f40; margin-top: 10px;">Lip Balm</h5>
+    <p style="font-size: 16px; color: #7a7a6f;">PKR 650</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-light add-to-cart-btn" >Add to Cart</button>
+      <button class="btn buy-now-btn" style="background-color: #5d6c5a; color: #fff; border-radius: 8px; padding: 6px 16px;">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+<div class="container py-5">
+  <h2 class="text-center mb-4" style="color: #5d6c5a;">New Arrival</h2>
+  <div class="row g-4">
+  <div class="col-md-4">
+  <div class="card text-center p-3 product-card">
+    <img src="https://thisislatinamerica.com/cdn/shop/products/fJIjCmaCCc_1080x.jpg?v=1669332022" 
+      class="product-img mb-3" 
+      alt="Glow Boost"
+      onmouseover="this.src='https://t3.ftcdn.net/jpg/12/25/42/58/360_F_1225425814_1613SnXyf1BtsdMPvedtX56th5PM0Blw.jpg';"
+      onmouseout="this.src='https://thisislatinamerica.com/cdn/shop/products/fJIjCmaCCc_1080x.jpg?v=1669332022';">
+    <h5 style="font-size: 20px; font-weight: 600; color: #434f40; margin-top: 10px;">ClayAura Mask</h5>
+    <p style="font-size: 16px; color: #7a7a6f;">PKR 2,100</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-light add-to-cart-btn" >Add to Cart</button>
+      <button class="btn buy-now-btn" style="background-color: #5d6c5a; color: #fff; border-radius: 8px; padding: 6px 16px;">Buy Now</button>
+    </div>
+  </div>
+</div>
+    <div class="col-md-4">
+  <div class="card text-center p-3 product-card">
+    <img src="https://t3.ftcdn.net/jpg/10/56/14/52/360_F_1056145206_9KyfraSiMb2zmHYwR1hEkFdo21De1aFQ.jpg" 
+      class="product-img mb-3" 
+      alt="KLEA Cleanser for Fresh and Clean Skin"
+      onmouseover="this.src='https://t4.ftcdn.net/jpg/11/28/40/95/360_F_1128409589_9DJ6MnZMjUc7LmhC3fHOTXqrVdi6cI7S.jpg';"
+      onmouseout="this.src='https://t3.ftcdn.net/jpg/10/56/14/52/360_F_1056145206_9KyfraSiMb2zmHYwR1hEkFdo21De1aFQ.jpg';">
+    <h5 style="font-size: 20px; font-weight: 600; color: #434f40; margin-top: 10px;">Facial Cleanser</h5>
+    <p style="font-size: 16px; color: #7a7a6f;">PKR 1,600</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-light add-to-cart-btn" >Add to Cart</button>
+      <button class="btn buy-now-btn" style="background-color: #5d6c5a; color: #fff; border-radius: 8px; padding: 6px 16px;">Buy Now</button>
+    </div>
+  </div>
+</div>
+
+   <div class="col-md-4">
+      <div class="card text-center p-3 product-card">
+    <img src="https://media.istockphoto.com/id/1488237263/photo/sunscreen-and-glasses-in-a-wicker-straw-bag-on-a-sandy-beach.jpg?s=612x612&w=0&k=20&c=R2zXqYiRu8P19wMxBP73rF2NOHJehscQsjGXWybNBlE=" 
+      class="product-img mb-3" 
+      alt="Protection from sun rays"
+      onmouseover="this.src='https://media.istockphoto.com/id/1368049917/photo/woman-using-sunscreen.jpg?s=612x612&w=0&k=20&c=00yHsrZ2MJARdx-YO143Qd6872daMFOjYt2jAP0fceQ=';"
+      onmouseout="this.src='https://media.istockphoto.com/id/1488237263/photo/sunscreen-and-glasses-in-a-wicker-straw-bag-on-a-sandy-beach.jpg?s=612x612&w=0&k=20&c=R2zXqYiRu8P19wMxBP73rF2NOHJehscQsjGXWybNBlE=';">
+    <h5 style="font-size: 20px; font-weight: 600; color: #434f40; margin-top: 10px;">Sunblock SPF 50+</h5>
+    <p style="font-size: 16px; color: #7a7a6f;">PKR 1,900</p>
+    <div class="d-flex justify-content-center gap-2 mt-3">
+      <button class="btn btn-outline-light add-to-cart-btn" >Add to Cart</button>
+      <button class="btn buy-now-btn" style="background-color: #5d6c5a; color: #fff; border-radius: 8px; padding: 6px 16px;">Buy Now</button>
+    </div>
+  </div>
+</div>
+</div>
+
+  </div>
+</div>
+
+<div class="container py-5">
+  <h2 class="text-center mb-4" style="color: #5d6c5a;">Value Bundle</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <img src="https://i.insider.com/5c796a7426289858477ea5c2?width=800&format=jpeg&auto=webp" 
+      class="img-fluid rounded"  alt="">
+    </div>
+
+    <div class="col-md-5">
+      <img src="https://down-id.img.susercontent.com/file/6048ba0560706745445ee5c81193450a" 
+      class="img-fluid rounded"  alt="">
+    </div>
+
+  </div>
+</div>
+
+
+<section class="container my-5">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <h2 class="text-center mb-4" style="color: #5d6c5a;">What Our Customers Say</h2>
+
+  <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+       <div class="carousel-item text-center">
+        <div class="p-4">
+          <h5>Huda Kattan</h5>
+          <p class="lead">"Budget friendly and premium💕"</p>
+          <div>⭐⭐⭐⭐☆</div>
+        </div>
+      </div>
+
+      <div class="carousel-item active text-center">
+        <div class="p-4">
+          <h5>Kendall Jenner</h5>
+          <p class="lead">"KLEA products ne meri skin ko itna fresh aur glowing banaya hai. I'm in love with their organic range!🤩🤩"</p>
+          <div>⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+      <div class="carousel-item text-center">
+        <div class="p-4">
+          <h5>Bella Hadid</h5>
+          <p class="lead">"Excellent skincare!😍 My acne scars kam ho gaye hain aur skin soft feel karti hai👌"</p>
+          <div>⭐⭐⭐⭐☆</div>
+        </div>
+      </div>
+
+      <div class="carousel-item text-center">
+        <div class="p-4">
+          <h5>Kate Moss</h5>
+          <p class="lead">"Highly recommended for sensitive skin. No irritation, sirf hydration aur glow!🤌🫶"</p>
+          <div>⭐⭐⭐⭐⭐</div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</section>
+
+<style>
+  .custom-footer {
+  background-color: #abb6a6; /* 2nd palette color */
+  color: #333;
+  padding: 50px 0;
+  font-family: 'Lora', serif;
+}
+
+.footer-heading {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #5d6c5a;
+}
+
+.footer-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer-links li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #5d6c5a;
+}
+
+.social-icon {
+  font-size: 22px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #627162;
+}
+
+.payment-icon {
+  font-size: 28px;
+  margin: 0 8px;
+}
+
+.copyright-text {
+  font-size: 13px;
+  color: #627162;
+}
+
+.copyright-section {
+  border-top: 1px solid #bdaf9a;
+  padding-top: 20px;
+  margin-top: 30px;
+}
+</style>
+
+  <footer class="container-fluid custom-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-sm-4">
+          <h5 class="footer-heading">Klean Beauty</h5>
+          <p class="footer-text">Minimal skincare for maximum results. Our products are cruelty-free and made with natural ingredients.</p>
+          <div class="social-links mt-3">
+            <a href="#" class="social-icon" style="color: #5d6c5a;"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" style="color: #5d6c5a;"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon" style="color: #5d6c5a;"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="col-sm-2"></div>
+ 
+        <div class="col-sm-3">
+          <h5 class="footer-heading">Quick Links</h5>
+          <ul class="footer-links">
+            <li><a href="about/about.html">About Us</a></li>
+            <li><a href="product/our_product.html">Our Products</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
+          </ul>
+        </div>
+ 
+        <div class="col-sm-3">
+          <h5 class="footer-heading">Customer Care</h5>
+          <ul class="footer-links">
+            <li><a href="about/customer_care.html">Shipping Policy</a></li>
+            <li><a href="returns.html">Returns & Exchanges</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+          </ul>
+        </div>
+ 
+      <div class="copyright-section text-center mt-4 pt-3">
+        <p class="copyright-text">© 2025 Klean Beauty. All rights reserved.</p>
+        <div class="payment-methods mt-2">
+          <i class="fab fa-cc-visa payment-icon"></i>
+          <i class="fab fa-cc-mastercard payment-icon"></i>
+          <i class="fab fa-cc-paypal payment-icon"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+  </body>
+
+
+<script>
+  // Product image slideshow on hover
+  let productInterval;
+  function startProductSlide(card) {
+    const img = card.querySelector('.product-img');
+    const images = [
+      'https://source.unsplash.com/400x400/?cosmetics',
+      'https://source.unsplash.com/400x400/?beauty,skincare'
+    ];
+    let index = 0;
+    productInterval = setInterval(() => {
+      index = (index + 1) % images.length;
+      img.src = images[index];
+    }, 1500);
+  }
+  function stopProductSlide() {
+    clearInterval(productInterval);
+  }
+
+  // Model image slideshow
+  const modelImages = [
+    'https://i.insider.com/5c796a7426289858477ea5c2?width=800&format=jpeg&auto=webp', // Use your provided image
+    'https://down-id.img.susercontent.com/file/6048ba0560706745445ee5c81193450a' // Use your provided image
+  ];
+  let modelIndex = 0;
+  setInterval(() => {
+    modelIndex = (modelIndex + 1) % modelImages.length;
+    // Ensure you have an element with id="modelImage" if you want this script to work.
+    // I don't see one in your provided HTML for the "Value Bundle" section.
+    // If you want to make the value bundle images cycle, you'll need to adjust their structure.
+    // For now, this part of the script might not visibly do anything unless `modelImage` exists.
+    // document.getElementById('modelImage').src = modelImages[modelIndex]; 
+  }, 2000);
+</script>
+
+  <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // --- Top Bar Message Script ---
+            const announcementMessageElement = document.getElementById('announcement-message'); // Correctly target the 'a' tag
+            const messages = [
+                "USE WELCOME10 FOR 10% OFF FIRST ORDER",
+                "🚨 Glow Up Alert! Our New Launch Just Dropped 🚨",
+                "Free delivery for PKR 2998/- and above",
+                "HURRY UP GIRLS!! 🏃‍♀️⌛" // Added the fourth message
+            ];
+            let messageIndex = 0;
+
+            function changeTopBarMessage() {
+                announcementMessageElement.style.opacity = 0;
+                setTimeout(() => {
+                    messageIndex = (messageIndex + 1) % messages.length;
+                    announcementMessageElement.textContent = messages[messageIndex];
+                    announcementMessageElement.style.opacity = 1;
+                }, 500); // Fade out duration
+            }
+            setInterval(changeTopBarMessage, 2000); // Change every 2 seconds (total cycle time including fade)
+
+            // --- Cart Functionality Script ---
+            const cartIcon = document.getElementById('cart-icon');
+            const cartQuantityBadge = document.getElementById('cart-quantity'); // This ID doesn't exist in your HTML, consider adding it
+            const cartSidebar = document.getElementById('cart-sidebar');
+            const closeCartBtn = document.querySelector('.close-cart'); // Changed to class selector
+            const cartItemsContainer = document.getElementById('cart-items'); // Changed to 'cart-items'
+            const cartTotalPrice = document.getElementById('cart-total'); // Changed to 'cart-total'
+            const thankYouOverlay = document.getElementById('thank-you-overlay'); // This ID doesn't exist in your HTML, consider adding it
+            const buyNowButtons = document.querySelectorAll('.btn.buy-now-btn'); // Selects the 'Buy Now' button
+            const addToCartButtons = document.querySelectorAll('.add-to-cart-btn'); // Selects 'Add to Cart' buttons
+
+            let cart = JSON.parse(localStorage.getItem('kleaCart')) || []; // Load cart from localStorage
+
+            function saveCart() {
+                localStorage.setItem('kleaCart', JSON.stringify(cart));
+            }
+
+            function updateCartDisplay() {
+                cartItemsContainer.innerHTML = ''; // Clear current items
+                let totalQuantity = 0;
+                let totalPrice = 0;
+
+                if (cart.length === 0) {
+                    cartItemsContainer.innerHTML = '<p class="empty-cart" style="text-align: center; margin-top: 20px; color: #777;">Your cart is empty.</p>';
+                } else {
+                    cart.forEach((item) => { 
+                        const cartItemDiv = document.createElement('div');
+                        cartItemDiv.classList.add('cart-item');
+                        cartItemDiv.innerHTML = `
+                                <img src="${item.image}" alt="${item.name}" style="width: 50px; height: 50px; object-fit: cover; margin-right: 10px; border-radius: 4px;">
+                                <div class="cart-item-details">
+                                    <div class="cart-item-name" style="font-weight: 500;">${item.name}</div>
+                                    <div class="cart-item-price">PKR ${parseFloat(item.price).toFixed(2)}</div>
+                                </div>
+                                <button class="remove-item-btn" data-product-id="${item.id}">&times;</button>
+                        `;
+                        cartItemsContainer.appendChild(cartItemDiv);
+
+                        totalQuantity += 1; // Assuming each entry is one item
+                        totalPrice += parseFloat(item.price);
+                    });
+                }
+
+                if (cartQuantityBadge) { // Check if badge element exists before updating
+                    cartQuantityBadge.textContent = totalQuantity;
+                }
+                cartTotalPrice.textContent = `PKR ${totalPrice.toFixed(2)}`;
+                saveCart(); // Save cart to localStorage after updating display
+            }
+
+            function generateUniqueId() {
+                return Date.now().toString(36) + Math.random().toString(36).substr(2);
+            }
+
+            function removeFromCart(productId) {
+                cart = cart.filter(item => item.id !== productId);
+                updateCartDisplay();
+            }
+
+            // Modified addToCart to extract product info from the card itself
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    const productCard = event.target.closest('.product-card');
+                    if (productCard) {
+                        const productName = productCard.querySelector('h5').textContent;
+                        const productPriceText = productCard.querySelector('p').textContent;
+                        const productPrice = parseFloat(productPriceText.replace('PKR ', '').replace(',', ''));
+                        const productImage = productCard.querySelector('img').src;
+                        const productId = generateUniqueId(); // Generate unique ID for each added item
+
+                        // Check if product with the same name already exists in cart to avoid duplicates if desired
+                        const existingItem = cart.find(item => item.name === productName);
+                        
+                        if (!existingItem) { // If not in cart, add it
+                            cart.push({
+                                id: productId,
+                                name: productName,
+                                price: productPrice,
+                                image: productImage
+                            });
+                            updateCartDisplay();
+                             cartSidebar.classList.add('active'); // Open cart sidebar after adding
+                        } else {
+                            // Optionally, you can alert the user that the item is already in the cart
+                            alert(`${productName} is already in your cart!`);
+                            cartSidebar.classList.add('active'); // Still open the cart
+                        }
+                    }
+                });
+            });
+
+            // Handle clicks on "Remove" buttons within the cart sidebar
+            cartItemsContainer.addEventListener('click', (event) => {
+                if (event.target.classList.contains('remove-item-btn')) {
+                    const productIdToRemove = event.target.dataset.productId;
+                    removeFromCart(productIdToRemove);
+                }
+            });
+
+            // Handle clicks on "Buy Now" buttons (simplified for this context)
+            buyNowButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    alert('Redirecting to checkout for this item!');
+                    // In a real scenario, you'd add this item to cart and then redirect to checkout
+                    // For now, this just gives a confirmation.
+                });
+            });
+
+            // Initial display update when the page loads
+            updateCartDisplay();
+
+            // Checkout button action
+            document.getElementById('checkout-btn').addEventListener('click', (event) => {
+                event.preventDefault(); // Prevent default link behavior
+                if (cart.length > 0) {
+                    alert('Proceeding to checkout with ' + cart.length + ' item(s). Total: ' + cartTotalPrice.textContent);
+                    cart = []; // Clear cart after checkout
+                    saveCart(); // Save empty cart
+                    updateCartDisplay();
+                    cartSidebar.classList.remove('active'); // Close sidebar
+                } else {
+                    alert('Your cart is empty. Add items before checking out.');m
+                }
+            });
+
+            // Removed `view-cart-btn` as it was not present in the HTML and no longer needed given the sidebar.
+        });
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
