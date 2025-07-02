@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klea</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar d-flex justify-content-center align-items-center py-2">
+    <a href="#" class="text-white text-decoration-none small">USE WELCOME10 FOR 10% OFF FIRST ORDER</a>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container d-flex justify-content-between align-items-center">
+      <div class="navbar-left">
+        <a class="nav-link" href="#">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.085.12l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.12-.085zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg>
+        </a>
+      </div>
+
+      <a class="navbar-brand-klea mx-auto" href="#">KLEA</a>
+
+      <div class="navbar-right d-flex align-items-center">
+        <a class="nav-link me-3 nav-link active" href="contact.html">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/>
+          </svg>
+        </a>
+        <a class="nav-link" href="#" id="cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white pt-0">
+    <div class="container d-flex justify-content-center">
+      <ul class="navbar-nav">
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark" href="Landing_pg.html">Home</a>
+        </li>
+        <li class="nav-item dropdown mx-3">
+          <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdownShop" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Shop
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownShop">
+            <li><a class="dropdown-item" href="/all_products/cleanser.html">Cleanser</a></li>
+            <li><a class="dropdown-item" href="/all_products/moisturizer.html">Mosturizer</a></li>
+            <li><a class="dropdown-item" href="/all_products/lip_balm.html">Lip care</a></li>
+            <li><a class="dropdown-item" href="/all_products/serum.html">Serum</a></li>
+            <li><a class="dropdown-item" href="all_products/mask.html">Mask</a></li>
+            <li><a class="dropdown-item" href="all_products/toner.html">Toner</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="all_products/our_product.html">All Products</a></li>
+          </ul>
+        </li>
+        <li class="nav-item mx-3">
+          <a class="nav-link text-dark" href="about.html">Explore</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-----cart----->
+  <div id="empty-cart-overlay">
+    <div class="empty-cart-content">
+      <button type="button" class="close-button" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <h2>Your cart is empty</h2>
+      <p>Looks like you haven't added anything to your cart yet.</p>
+      <a href="/shop" class="continue-shopping-button">Continue shopping</a>
+      <div class="have-account">
+        Have an account? <a href="/login">Log in</a> to check out faster.
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+    <!-- Page Content -->
+  <div class="content container-fluid">
+    <!-- Your content goes here -->
+    <main>
+        <section class="explore-hero d-flex align-items-center justify-content-center" style="background-image: url('placeholder-products.jpg');">
+          <div class="explore-content text-center p-4 p-md-5">
+            <h1 class="mb-4">Planet, People and pH friendly</h1>
+            <p class="lead">From our packaging, to our ingredients everything is sourced keeping our planet and you in mind. We took special care to use environmentally safe micro-beads, ethically sourced cocoa beans, and natural cleansing oils. Our packaging is recycle-friendly and product is people friendly!</p>
+          </div>
+        </section>
+    
+        <section class="our-promise text-center py-5">
+            <div class="container">
+                <h2 class="display-5 fw-bold mb-4">Our Promise To You</h2>
+                <p class="lead text-muted">At KLEA, we are committed to quality, sustainability, and transparency. Discover what makes us different.</p>
+                </div>
+        </section>
+      </main>
+  </div>
+  <div class="container-fluid">
+    <div class="row m-5 justify-content-between">
+        <div class="col-sm-2"></div>
+        <div class="ex-img col-sm-4"><img src="https://i.pinimg.com/736x/70/51/5e/70515e92b6d411e76db2bb7007d3e923.jpg"> </div>
+        <div class="para col-sm-4"> <p> Clean & Kind ♡ <br>
+            From conciously-sourced ingredients to recyclable packaging we want to create amazing skincare while minimizing our carbon footprint. 
+            Our formulations are packed with skincare goodness to revitalize and treat your skin. Because healthy skin is our priority.</p>
+        <p>Rooted in Nature<br>
+            Our passion for pure, potent ingredients drives us. 
+            We explore the finest botanicals and scientifically-backed compounds to unlock skin's natural vitality, 
+            ensuring every drop contributes to your skin's health.
+            <p>Innovation & Integrity<br>
+                We're constantly researching and developing, 
+                pushing the boundaries of clean beauty. But innovation at KLEA always comes with integrity – meaning no compromises on safety, 
+                sustainability, or performance.</p>
+            <p>A Community of Care<br>
+                KLEA is more than a brand; it's a movement. 
+                We believe in fostering a community that values conscious choices, 
+                celebrates diverse beauty, and strives for a healthier planet, together.</p>
+    </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+    
+
+    <!----Footer-->
+    <footer class="container-fluid custom-footer">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Company Info Column -->
+            <div class="col-sm-4">
+              <h5 class="footer-heading">Klean Beauty</h5>
+              <p class="footer-text">Minimal skincare for maximum results. Our products are cruelty-free and made with natural ingredients.</p>
+              <div class="social-links mt-3">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              </div>
+            </div>
+    
+            <div class="col-sm-2"></div>
+      
+            <!-- Quick Links Column -->
+            <div class="col-sm-3">
+              <h5 class="footer-heading">Quick Links</h5>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="all_products/our_product.html">Our Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+
+             <!-- Customer Service Column -->
+            <div class="col-sm-3">
+              <h5 class="footer-heading">Customer Care</h5>
+              <ul class="footer-links">
+                <li><a href="services.html#shipping-policy">Shipping Policy</a></li>
+                <li><a href="services.html#returns">Returns & Exchanges</a></li>
+                <li><a href="services.html#faq">FAQ</a></li>
+                <li><a href="services.html#privacy">Privacy Policy</a></li>
+              </ul>
+            </div>
+      
+    
+      
+          <!-- Copyright Section -->
+          <div class="copyright-section text-center mt-4 pt-3">
+            <p class="copyright-text">© 2025 Klean Beauty. All rights reserved.</p>
+            <div class="payment-methods mt-2">
+              <i class="fab fa-cc-visa payment-icon"></i>
+              <i class="fab fa-cc-mastercard payment-icon"></i>
+              <i class="fab fa-cc-paypal payment-icon"></i>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="app.js"></script>
+      </body>
+      </html>
